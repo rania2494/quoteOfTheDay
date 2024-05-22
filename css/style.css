@@ -1,0 +1,79 @@
+:root{
+    --bs-box-shadow-lg: 0 1rem 3rem #19875469;
+}
+body{
+    font-family: "Merienda", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-image:url(../images/bg2.jpeg);
+    background-size: cover;
+    background-position: top;
+}
+h1{
+    color: rgb(255, 255, 255);
+    text-shadow: 4px 9px 6px rgb(255, 255, 255);
+    animation:scale 5s infinite ;
+    position: relative;
+}
+h1::after{
+    content: '';
+    background-color: white;
+    width: 80%;
+    height: 2px;
+    position: absolute;
+    bottom: -10px;
+    left: 10%;
+}
+h1::before{
+    content: '';
+    background-color: white;
+    width: 50%;
+    height: 2px;
+    position: absolute;
+    bottom: -20px;
+    left: 25%;
+}
+@keyframes scale{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.05);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.bg-flower{
+    background-image: url(../images/bg2.jpeg);
+    background-size: cover;
+}
+
+.translate-middle-75{
+    transform: translateY(-75%)
+}
+.p-negative{
+    margin-top: -35px;
+}
+.min-vh-60{
+    height: 60vh;
+}
+.min-vh-42{
+    height: 42vh;
+}
+@media screen and (max-width: 567px) {
+    .col-xsm-10 {
+        width: 83%; }
+  }
+
+  button{
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4))  ,url(../images/bg2.jpeg);
+    box-shadow: 4px 11px 50px 2px rgb(12, 12, 12);
+    background-position: 200px 850px;
+transition:all 1s ;
+  }
+  button:hover{
+    background-position: 150px 800px;
+    box-shadow: none;
+
+  }
